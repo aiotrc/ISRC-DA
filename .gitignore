@@ -76,3 +76,5 @@ out
 gen
 build
 classes
+gradlew
+*.bat
