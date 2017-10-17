@@ -1,5 +1,6 @@
 /**
  * Created by aryad on 14/10/2017.
+ * For more info this link is useful: <a href="http://spark.apache.org/docs/2.1.0/programming-guide.html">spark-programming-guide</a>
  */
 
 
@@ -23,7 +24,9 @@ public class SparkTextReadSample {
         // Reduce to calculate total sum
         int totalLength = lineLengths.reduce((a, b) -> a + b);
 
-        System.out.println(totalLength);
+        sc.stop();
+
+        System.out.println("Total Length: " + totalLength);
     }
 
 }
