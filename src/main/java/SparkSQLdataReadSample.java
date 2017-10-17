@@ -20,6 +20,8 @@ public class SparkSQLdataReadSample {
     private final static String table = "people";
 
     public static void main(String[] args) {
+
+        // Make spark session and set it to run locally
         SparkSession spark = SparkSession
                 .builder()
                 .appName("Java Spark SQL data sources example")
